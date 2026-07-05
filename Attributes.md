@@ -10,7 +10,7 @@ struct Attribute
 };
 ```
 
-<small>I included an `id` field in order to it easier to locate attributes inside the game.</small>
+*Note: I included an `id` field in order to it easier to locate attributes inside the game.*
 
 
 
@@ -45,9 +45,9 @@ inline float attribute_calculate_priority(const Attribute& attribute)
 ```
 ```
 
-<small>The `abs` (stands for "absolute") function forces a value to be positive. Expliciting this here just to make sure no confusions are made.</small>
+*Note: The `abs` (stands for "absolute") function forces a value to be positive. Expliciting this here just to make sure no confusions are made.*
 
-<small>In usual circunstances, I'd use a polymorphism based approach to implement the above logic. But since the game mainly or fully uses procedural programming, I'll try to adapt it to procedural as much as I can. However, I'm not the most experienced with raw procedural programming, so it may not be the best way of implementing it. Also, note the use of C++ features like initialization of fields inside the declaration (`float value = 1`), `std::string` and, more below, `std::vector`. I'm using these for simplicity reasons, and because I've seen that you use them too inside the engine.</small>
+*Note: In usual circunstances, I'd use a polymorphism based approach to implement the above logic. But since the game mainly or fully uses procedural programming, I'll try to adapt it to procedural as much as I can. However, I'm not the most experienced with raw procedural programming, so it may not be the best way of implementing it. Also, note the use of C++ features like initialization of fields inside the declaration (`float value = 1`), `std::string` and, more below, `std::vector`. I'm using these for simplicity reasons, and because I've seen that you use them too inside the engine.*
 
 
 
