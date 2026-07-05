@@ -81,3 +81,5 @@ struct Attribute
 <small>*Note: `std::optional` is a very useful C++ class that makes a value optional, so it can or not have a value. In raw C, the only way of doing it would be using pointers, or creating a separated boolean that determines whether the specific object has or not a value.*</small>
 
 `ideal_is_min` and `ideal_is_max` (when `false`) determines whether `value` can go below or above `ideal`, respectively. `min` and `max` are similar, but instead of using `ideal` as the limiter, it allows you to choose a custom value. Note that if `min > ideal` or `max < ideal`, the respective field should be ignored. `ideal_is_min` and `ideal_is_max` have priority over `min` and `max`.
+
+
