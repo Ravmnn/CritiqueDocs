@@ -25,7 +25,6 @@ In some cases, you'll want an attribute to be important to an entity, so that it
 Since an entity may have multiple needs, it must have a way of deciding which one has the higher priority in the current moment. That priority is calculated by how far the value of the attribute is from its ideal, and how important is that attribute. Setting an importance to each need is recommended because a `hydration` (thirst) need obviously has less priority than making sure your `health` is in good conditions. Some needs decrease their `value` naturally with time, like the cited above `hydration`, plus others including `satiation` (hunger). Given that definition, we could expand the original `Attribute` struct to:
 
 ```cpp
-```cpp
 struct Attribute
 {
     std::string id;
@@ -42,7 +41,7 @@ inline float attribute_calculate_priority(const Attribute& attribute)
 {
     return attribute.is_a_need ? attribute.importance * abs(attribute.ideal - attribute.value) : 0;
 }
-```
+
 ```
 
 *Note: The `abs` (stands for "absolute") function forces a value to be positive. Expliciting this here just to make sure no confusions are made.*
